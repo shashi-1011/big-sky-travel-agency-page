@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Big Sky Travles|homepage</title>
+</head>
+<body>
+    <div class="menu"  onclick="toggle()">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo">Big Sky Travels</h2>
+            <div class="toggle" onclick="toggle()"></div>
+        </header>
+        <!-- <video src="./In-The-Clouds.mp4" muted autoplay loop></video> -->
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Big Sky Travels</h2>
+            <h4>welcomes you proudly</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officia,
+                 quibusdam nostrum repudiandae numquam maiores  nulla quis placeat officiis.</p>
+                 <a href="https://docs.google.com/forms/u/0/d/1faqQSlC3p7E-QI4PEu15rkUqj-40JVSVfxKgjjCjbwE/edit?ntd=1&usp=forms_home&ths=true">Get in Touch</a>
+        </div>
+        
+        <ul class="sci">
+            <li><a href="#"><img src="./facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="./instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="./twitter.png" alt="twitter"></a></li>
+
+        </ul>
+    </section>
+    <script>
+        function toggle(){
+            var menutoggle = document.querySelector('.toggle');
+            menutoggle.classList.toggle('active');
+            var banner = document.querySelector('.banner');
+            banner.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
